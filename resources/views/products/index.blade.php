@@ -23,7 +23,7 @@
                         {{ $product->short }}
                     </td>
                     <td><a href="{{ route('products.show', $product->id) }}">ver</a></td>
-                    <td>editar</td>
+                    <td><a href="{{ route('products.edit', $product->id) }}">editar</a></td>
                     <td>
                         <form action="{{ route('products.destroy', $product->id)}}" method="POST">
                             {{csrf_field()}}
